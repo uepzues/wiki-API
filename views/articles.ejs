@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<div class="bg-green-300 stretch">
+  <% foundArticles.forEach(article => { %>
+  <%- `<div class="mx-[10%] bg-blue-300">` %>
+  <%- `<h1 class="p-2 font-bold">${article.title}</h1>` %>
+  <%- `<p class="p-2">${article.content}</p>` %>
+  <%- `</div>` %>
+  <% }); %>
+</div>
+
+<%- include('partials/footer') %>
